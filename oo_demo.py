@@ -16,9 +16,16 @@ eoghan.deposit(10000)
 print(another.getbalance())
 print(eoghan.getbalance())
 print(Account.numCreated)
+
 print("object another is class", another.__class__.__name__)
 print(eoghan.__class__.__name__)
 print(eoghan)
 print(another)
+# Overriding operators
+if eoghan > another:
+    print(f"{eoghan} has more money than {another}!")
+if another < some_account:
+    print(f"{another} has less money than {some_account}!")
 
-if eoghan > some_account
+# Using a class method
+print(Account.get_total_balance())
